@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>this is a title!</title>
+        <script>
+            function showAlert() {
+                alert("This is an alert!");
+            }
+            function buttonReport (buttonId, buttonName, buttonValue) {
+                var buttonMessage1="Button ID: " + buttonId + "\n";
+                var buttonMessage2="Button Name: " + buttonName + "\n";
+                var buttonMessage3="Button Value: " + buttonValue + "\n";
+                alert(buttonMessage1 + buttonMessage2 + buttonMessage3);
+            }
+        </script>
+        <script src='/path/to/mycode.js'></script>
+        <script src='http://www.mywebsite.com/script/mycode.js'></script>
+    </head>
+    <body>
+        <script>
+            //This is a comment
+            var productName;
+            productName="letter jacket";
+            var productPrice;
+            productPrice = 350;
+            var numberofProducts;
+            numberofProducts = 20;
+            //alert(productName + " " + productPrice);
+            //alert("this is a alert");
+            //alert(document.title);
+            document.write(document.lastModified + "<br>");
+            document.write(productName + " " + productPrice + "<br>");
+            var cTemp;
+            cTemp = 37;
+            var fTemp;
+            fTemp = ((cTemp * 9) / 5) + 32;
+            document.write("The Temperature in Celsius is " + cTemp + " degrees<br/>");
+            document.write("The Temperature in Fahrenheit is " + fTemp + " degrees<br/>");
+            /* These are more comments
+            comments comments
+            coments */          
+        </script>
+        <input type="button" onclick="showAlert()" value="click me" />
+        <br>
+        <img src="drawing.png" alt="drawing" onmouseover="this.src='drawingBlue.png';" onmouseout="this.src='drawing.png';" onclick="this.title='my new title';" />
+        <br>
+        <input type="button" id="leftButton" name="Button1" onclick="buttonReport(this.id, this.name, this.value)" value="left" />
+        <input type="button" id="CenterButton" name="Button2" onclick="buttonReport(this.id, this.name, this.value)" value="center" />
+        <input type="button" id="RightButton" name="Button3" onclick="buttonReport(this.id, this.name, this.value)" value="Right" />
+    </body>
+</html>
+
+
